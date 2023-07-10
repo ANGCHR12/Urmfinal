@@ -89,7 +89,7 @@ export default  {
                 let activeUser = lsUsers.find((user) => user.email === credentials.email
                 );
                 localStorage.setItem("activeUser", JSON.stringify(activeUser));
-
+                console.log("login");
                 this.$router.push("/dashboard");
                 window.location.reload();
 
